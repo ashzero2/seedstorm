@@ -20,13 +20,13 @@
 		<tbody>
 			{#each torrents as torrent, i}
 				<tr>
-					<td><div class="">{torrent.name}</div></td>
-					<td class="text-center">{torrent.size}</td>
-					<td class="text-center">{torrent.seeders}</td>
-					<td class="text-center">{torrent.leechers}</td>
-					<td class="text-center">{torrent.category}</td>
-					<td class="text-center">{torrent.downloads}</td>
-					<td class="text-center">{torrent.date}</td>
+					<td><div class="">{torrent.name || ''}</div></td>
+					<td class="text-center">{torrent.size || ''}</td>
+					<td class="text-center">{torrent.seeders || ''}</td>
+					<td class="text-center">{torrent.leechers || ''}</td>
+					<td class="text-center">{torrent.category || ''}</td>
+					<td class="text-center">{torrent.downloads || ''}</td>
+					<td class="text-center">{torrent.date || ''}</td>
 					<td class="text-center">
 						<div class="flex justify-between">
 							<a href={torrent.url}>
