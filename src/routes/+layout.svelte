@@ -12,7 +12,7 @@
 	// Component Imports
 	import { AppShell } from '@skeletonlabs/skeleton';
 	import NavBar from '$lib/components/NavBar.svelte';
-	import Toast from '@skeletonlabs/skeleton';
+	import { Toast } from '@skeletonlabs/skeleton';
 
 	storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
 </script>
